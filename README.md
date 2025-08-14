@@ -37,7 +37,7 @@ To autoscale LXC containers on Proxmox hosts, you may be interested in [this rel
 To install **Proxmox VM Autoscale**, execute the following `curl bash` command. This command will automatically clone the repository, execute the installation script, and set up the service for you:
 
 ```bash
-bash <(curl -s https://raw.githubusercontent.com/fabriziosalmi/proxmox-vm-autoscale/main/install.sh)
+bash <(curl -s https://raw.githubusercontent.com/alvianfahrul/proxmox-vm-autoscale/main/install.sh)
 ```
 
 🎯 **This installation script will:**
