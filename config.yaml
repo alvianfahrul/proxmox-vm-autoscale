@@ -33,6 +33,7 @@ proxmox_hosts:
     ssh_user: root
     ssh_password: your_password_here
     ssh_key: /path/to/ssh_key
+    ssh_port: 22
 
 # Virtual machines to be monitored and scaled
 virtual_machines:
@@ -47,8 +48,8 @@ virtual_machines:
       ram_high: 80
       ram_low: 20
 
-  - vm_id: 102
-    proxmox_host: host2
+  - vm_id: "102"
+    proxmox_host: "host2"
     scaling_enabled: true
     cpu_scaling: true
     ram_scaling: true
