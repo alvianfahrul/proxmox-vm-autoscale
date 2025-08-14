@@ -92,10 +92,10 @@ class VMResourceManager:
             current_vcpus = self._get_current_vcpus()
 
             self.last_scale_time = time.time()
-            if direction == "up" and current_cores < max_cores:
+            if direction == "up" and current_vcpus < max_cores:
                 self._scale_cpu_up(current_cores, current_vcpus)
                 return True
-            elif direction == "down" and current_cores > min_cores:
+            elif direction == "down" and current_vcpus > min_cores:
                 self._scale_cpu_down(current_cores, current_vcpus)
                 return True
             else:
