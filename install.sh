@@ -5,7 +5,7 @@
 # Variables
 INSTALL_DIR="/usr/local/bin/vm_autoscale"
 BACKUP_DIR="/etc/vm_autoscale"  # New separate backup directory
-REPO_URL="https://github.com/fabriziosalmi/proxmox-vm-autoscale"
+REPO_URL="https://github.com/alvianfahrul/proxmox-vm-autoscale"
 SERVICE_FILE="vm_autoscale.service"
 CONFIG_FILE="$INSTALL_DIR/config.yaml"
 BACKUP_FILE="$BACKUP_DIR/config.yaml.backup"  # Updated backup location
