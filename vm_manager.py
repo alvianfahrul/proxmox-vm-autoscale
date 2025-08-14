@@ -266,7 +266,7 @@ class VMResourceManager:
 
     def _scale_cpu_up(self, current_cores, current_vcpus):
         """Helper method to scale CPU up."""
-        new_cores = current_cores + 1
+        new_cores = current_cores
         self._set_cores(new_cores)
         new_vcpus = min(current_vcpus + 1, new_cores)
         self._set_vcpus(new_vcpus)
@@ -275,7 +275,7 @@ class VMResourceManager:
         """Helper method to scale CPU down."""
         new_vcpus = max(current_vcpus - 1, 1)
         self._set_vcpus(new_vcpus)
-        new_cores = current_cores - 1
+        new_cores = current_cores
         self._set_cores(new_cores)
 
     def _set_cores(self, cores):
